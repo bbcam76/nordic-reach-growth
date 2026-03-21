@@ -38,7 +38,7 @@ export default function ServicesSection() {
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {services.map((s, i) => (
             <ScrollReveal key={s.title} delay={i * 0.1}>
-              <div className="rounded-2xl p-8 h-full transition-all duration-300 group bg-accent/10 border border-accent/20 shadow-[0_4px_24px_hsla(var(--glow-blue),0.12),inset_0_1px_0_hsla(0,0%,100%,0.5)] hover:border-[hsl(var(--glow-gold))] hover:shadow-[0_0_16px_hsla(var(--glow-gold),0.25),0_4px_24px_hsla(var(--glow-gold),0.15)]">
+              <div className="rounded-2xl p-8 h-full transition-all duration-300 group bg-[hsla(225,60%,55%,0.12)] border border-[hsla(225,60%,55%,0.25)] shadow-[0_4px_24px_hsla(225,60%,55%,0.1),inset_0_1px_0_hsla(0,0%,100%,0.5)] hover:border-[hsl(var(--glow-gold))] hover:shadow-[0_0_16px_hsla(var(--glow-gold),0.25),0_4px_24px_hsla(var(--glow-gold),0.15)]">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-primary/15">
                   <s.icon className="w-6 h-6 text-primary" />
                 </div>
