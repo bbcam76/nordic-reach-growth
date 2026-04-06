@@ -116,7 +116,7 @@ To become a leading remote sales partner in the Nordic region by delivering meas
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the Nordic Reach Group License.
 
 ---
 
