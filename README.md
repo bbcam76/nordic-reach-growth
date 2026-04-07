@@ -1,45 +1,4 @@
-<p align="center">
-  <b>
-    <sub></sub>
-    Nordic Reach Group is a results-driven B2B sales agency helping companies grow through high-performance remote sales.
-  </b>
-</p>
-🚀 PRO VERSION (bäst visuellt)
-
-Använd en underrubrik (##) istället:
-
-## **Nordic Reach Group is a results-driven B2B sales agency helping companies grow through high-performance remote sales.**
-
-👉 Detta ger:
-
-Större text
-Bold
-100% GitHub-kompatibelt
-💡 MIN REKOMMENDATION
-
-Kombinera center + stor text:
-
-<div align="center">
-
-## Nordic Reach Group is a results-driven B2B sales agency helping companies grow through high-performance remote sales.
-
-</div>
-🧠 PRO TIPS
-
-GitHub README handlar om:
-
-Enkelhet
-Tydlighet
-Visuell struktur
-
-👉 För mycket styling = sämre effekt
-👉 Ren struktur = mer “seriöst företag”
-
-Vill du:
-👉 Jag kan göra en README som ser ut som en SaaS-startup (med badges, stats, sections)
-
-Säg bara:
-“README elite” 🚀
+<div align="center"> 
 
 # 🌍 Nordic Reach Group
 ![Nordic Reach Group](images/NRG01.jpeg)
