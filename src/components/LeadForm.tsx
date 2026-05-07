@@ -7,6 +7,7 @@ import ScrollReveal from "./ScrollReveal";
 import { useApp } from "@/contexts/AppContext";
 
 export default function LeadForm() {
+  const { t } = useApp();
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
