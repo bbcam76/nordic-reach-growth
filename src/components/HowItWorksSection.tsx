@@ -1,23 +1,23 @@
 import ScrollReveal from "./ScrollReveal";
-
-const steps = [
-  { number: "01", title: "We understand your business", description: "Deep dive into your goals, market, and ideal customer profile." },
-  { number: "02", title: "We generate leads", description: "Targeted outreach to fill your pipeline with qualified prospects." },
-  { number: "03", title: "We close deals", description: "Our trained reps convert conversations into revenue." },
-  { number: "04", title: "You scale", description: "Focus on growth while we handle the sales engine." },
-];
+import { useApp } from "@/contexts/AppContext";
 
 export default function HowItWorksSection() {
+  const { t } = useApp();
+  const steps = [
+    { number: "01", title: t("how.s1.title"), description: t("how.s1.desc") },
+    { number: "02", title: t("how.s2.title"), description: t("how.s2.desc") },
+    { number: "03", title: t("how.s3.title"), description: t("how.s3.desc") },
+    { number: "04", title: t("how.s4.title"), description: t("how.s4.desc") },
+  ];
+
   return (
     <section id="how-it-works" className="py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <ScrollReveal className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4 text-balance">
-            How It Works
+            {t("how.title")}
           </h2>
-          <p className="text-muted-foreground max-w-md mx-auto text-pretty">
-            A simple, transparent process from kickoff to results.
-          </p>
+          <p className="text-muted-foreground max-w-md mx-auto text-pretty">{t("how.subtitle")}</p>
         </ScrollReveal>
 
         <div className="max-w-3xl mx-auto space-y-6">
