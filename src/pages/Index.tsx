@@ -1,3 +1,4 @@
+import { AppProvider } from "@/contexts/AppContext";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -9,16 +10,18 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden">
-      <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <HowItWorksSection />
-      <AboutSection />
-      <LeadForm />
-      <ContactSection />
-      <Footer />
-    </div>
+    <AppProvider>
+      <div className="min-h-screen overflow-x-hidden">
+        <Navbar />
+        <HeroSection />
+        <ServicesSection />
+        <HowItWorksSection />
+        <AboutSection />
+        <LeadForm />
+        <ContactSection />
+        <Footer />
+      </div>
+    </AppProvider>
   );
 };
 
