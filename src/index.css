@@ -48,6 +48,47 @@
     --hero-start: 210 40% 96%;
     --hero-end: 150 20% 94%;
   }
+
+  .dark {
+    --background: 215 35% 8%;
+    --foreground: 150 15% 92%;
+
+    --card: 215 30% 12%;
+    --card-foreground: 150 15% 92%;
+
+    --popover: 215 30% 12%;
+    --popover-foreground: 150 15% 92%;
+
+    --primary: 152 55% 50%;
+    --primary-foreground: 215 35% 8%;
+
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 150 15% 92%;
+
+    --muted: 215 25% 16%;
+    --muted-foreground: 150 10% 65%;
+
+    --accent: 210 60% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 150 15% 92%;
+
+    --border: 215 25% 22%;
+    --input: 215 25% 22%;
+    --ring: 152 55% 50%;
+
+    --glass-bg: 215 30% 14%;
+    --glass-border: 215 25% 30%;
+    --glow-blue: 210 80% 60%;
+    --glow-silver: 220 15% 50%;
+    --glow-gold: 45 80% 60%;
+    --sage: 150 25% 45%;
+    --seafoam: 170 30% 50%;
+    --cream: 215 25% 14%;
+    --hero-start: 215 35% 10%;
+    --hero-end: 215 30% 14%;
+  }
 }
 
 @layer base {
