@@ -1,38 +1,23 @@
 import { Phone, Target, TrendingUp } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
-
-const services = [
-  {
-    icon: Phone,
-    title: "B2B Telesales",
-    description: "Professional outbound sales teams that represent your brand with care and precision.",
-    benefits: ["Dedicated agents", "Quality-first approach", "Nordic market expertise"],
-  },
-  {
-    icon: Target,
-    title: "Lead Generation",
-    description: "Targeted prospecting that fills your pipeline with qualified, ready-to-talk leads.",
-    benefits: ["Data-driven targeting", "Multi-channel outreach", "Verified contacts"],
-  },
-  {
-    icon: TrendingUp,
-    title: "Sales Outsourcing",
-    description: "End-to-end sales operations so you can focus on what you do best — your product.",
-    benefits: ["Full-cycle management", "Performance-based", "Scalable teams"],
-  },
-];
+import { useApp } from "@/contexts/AppContext";
 
 export default function ServicesSection() {
+  const { t } = useApp();
+  const services = [
+    { icon: Phone, title: t("services.s1.title"), description: t("services.s1.desc"), benefits: [t("services.s1.b1"), t("services.s1.b2"), t("services.s1.b3")] },
+    { icon: Target, title: t("services.s2.title"), description: t("services.s2.desc"), benefits: [t("services.s2.b1"), t("services.s2.b2"), t("services.s2.b3")] },
+    { icon: TrendingUp, title: t("services.s3.title"), description: t("services.s3.desc"), benefits: [t("services.s3.b1"), t("services.s3.b2"), t("services.s3.b3")] },
+  ];
+
   return (
     <section id="services" className="py-24 lg:py-32 section-gradient">
       <div className="container mx-auto px-4">
         <ScrollReveal className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4 text-balance">
-            What We Do
+            {t("services.title")}
           </h2>
-          <p className="text-muted-foreground max-w-md mx-auto text-pretty">
-            Flexible sales solutions tailored to Nordic B2B companies ready to grow.
-          </p>
+          <p className="text-muted-foreground max-w-md mx-auto text-pretty">{t("services.subtitle")}</p>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
